@@ -57,7 +57,7 @@ module Api
             private
 
             def brand_params
-                params.permit(:name)
+                params.permit(:name, :product_id)
             end
         end
     end
