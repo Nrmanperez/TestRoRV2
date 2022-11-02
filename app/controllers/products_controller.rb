@@ -1,5 +1,6 @@
 class ProductsController < ApplicationController
   before_action :set_product, only: %i[ show update destroy ]
+  before_action :authorize_request
 
   # GET /products
   def index
@@ -26,7 +27,7 @@ class ProductsController < ApplicationController
 
   # PATCH/PUT /products/1
   def update
-    if @product.update(product_params)
+    if @product.update(update_params)
       render json: @product
     else
       render json: @product.errors, status: :unprocessable_entity
@@ -47,5 +48,9 @@ class ProductsController < ApplicationController
     # Only allow a list of trusted parameters through.
     def product_params
       params.require(:product).permit(:name, :description, :sku, :stock, :status, :category_id, :brand_id)
+    end
+
+    def update_params
+      params.require(:product).permit(:name, :description, :status)
     end
 end
