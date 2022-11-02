@@ -1,0 +1,15 @@
+current directory: /home/norman/Documents/testV2/testRoRV2/vendor/bundle/ruby/3.0.0/gems/bootsnap-1.13.0/ext/bootsnap
+/usr/bin/ruby3.0 -I /usr/lib/ruby/vendor_ruby -r ./siteconf20221101-896975-i6wc84.rb extconf.rb
+creating Makefile
+
+current directory: /home/norman/Documents/testV2/testRoRV2/vendor/bundle/ruby/3.0.0/gems/bootsnap-1.13.0/ext/bootsnap
+make DESTDIR\= clean
+
+current directory: /home/norman/Documents/testV2/testRoRV2/vendor/bundle/ruby/3.0.0/gems/bootsnap-1.13.0/ext/bootsnap
+make DESTDIR\=
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.so
+
+current directory: /home/norman/Documents/testV2/testRoRV2/vendor/bundle/ruby/3.0.0/gems/bootsnap-1.13.0/ext/bootsnap
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 bootsnap.so ./.gem.20221101-896975-anxpjp/bootsnap
